@@ -32,6 +32,7 @@ jobs:
         run: |
           git config user.name "btcc-cal-bot"
           git config user.email "btcc-cal-bot@users.noreply.github.com"
+          git pull --rebase
           git add btcc_2026.ics
           git diff --staged --quiet || git commit -m "chore: refresh BTCC 2026 timetable [$(date -u +%Y-%m-%d)]"
           git push

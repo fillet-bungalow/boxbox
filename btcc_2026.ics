@@ -1,0 +1,546 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//BTCC 2026 Calendar//btcc-cal//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:BTCC 2026 session times – all rounds. Auto-generated from b
+ tcc.net
+X-WR-CALNAME:BTCC 2026
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+X-WR-TIMEZONE:Europe/London
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Free Practice – Snetterton
+DTSTART;TZID=Europe/London:20260523T103000
+DTEND;TZID=Europe/London:20260523T113000
+DTSTAMP:20260518T224921Z
+UID:ed8803de59ffa05dbaf53b2eabf8c687@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 7\, 8 & 9\nSnetterton\n\nFree Practice\n\
+ nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\
+ nSource: btcc.net
+LOCATION:Snetterton Circuit\, Norwich\, Norfolk\, NR16 2JU
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying – Snetterton
+DTSTART;TZID=Europe/London:20260523T140000
+DTEND;TZID=Europe/London:20260523T143500
+DTSTAMP:20260518T224921Z
+UID:554e72d294de68fc2572a78acfbf34b5@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 7\, 8 & 9\nSnetterton\n\nQualifying\n\nSu
+ nday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSo
+ urce: btcc.net
+LOCATION:Snetterton Circuit\, Norwich\, Norfolk\, NR16 2JU
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying Race – Snetterton
+DTSTART;TZID=Europe/London:20260523T150500
+DTEND;TZID=Europe/London:20260523T153000
+DTSTAMP:20260518T224921Z
+UID:3a603554ae409811b6e9143a9cfe2e01@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 7\, 8 & 9\nSnetterton\n\nQualifying Race\
+ n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\
+ n\nSource: btcc.net
+LOCATION:Snetterton Circuit\, Norwich\, Norfolk\, NR16 2JU
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 1 – Snetterton
+DTSTART;TZID=Europe/London:20260524T113000
+DTEND;TZID=Europe/London:20260524T120500
+DTSTAMP:20260518T224921Z
+UID:fa5b6a7586fb4a76753c41a0401dcb8d@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 7\, 8 & 9\nSnetterton\n\nRace 1\n\nSunday
+  races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSource
+ : btcc.net
+LOCATION:Snetterton Circuit\, Norwich\, Norfolk\, NR16 2JU
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 2 – Snetterton
+DTSTART;TZID=Europe/London:20260524T143000
+DTEND;TZID=Europe/London:20260524T150500
+DTSTAMP:20260518T224921Z
+UID:847243d05690fcafd471f6cbf183d0a9@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 7\, 8 & 9\nSnetterton\n\nRace 2\n\nSunday
+  races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSource
+ : btcc.net
+LOCATION:Snetterton Circuit\, Norwich\, Norfolk\, NR16 2JU
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 3 – Snetterton
+DTSTART;TZID=Europe/London:20260524T172000
+DTEND;TZID=Europe/London:20260524T175500
+DTSTAMP:20260518T224921Z
+UID:d6677fdc379725fc816d11b447f67235@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 7\, 8 & 9\nSnetterton\n\nRace 3\n\nSunday
+  races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSource
+ : btcc.net
+LOCATION:Snetterton Circuit\, Norwich\, Norfolk\, NR16 2JU
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Free Practice – Oulton Park
+DTSTART;TZID=Europe/London:20260606T103000
+DTEND;TZID=Europe/London:20260606T111000
+DTSTAMP:20260518T224921Z
+UID:f9e07460709dc69e1745b4911473cc3a@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 10\, 11 & 12\nOulton Park\n\nFree Practic
+ e\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTub
+ e\n\nSource: btcc.net
+LOCATION:Oulton Park Circuit\, Little Budworth\, Cheshire\, CW6 9BW
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying – Oulton Park
+DTSTART;TZID=Europe/London:20260606T140000
+DTEND;TZID=Europe/London:20260606T143500
+DTSTAMP:20260518T224921Z
+UID:9a0e1447008ad9792cb932e6212b3386@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 10\, 11 & 12\nOulton Park\n\nQualifying\n
+ \nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n
+ \nSource: btcc.net
+LOCATION:Oulton Park Circuit\, Little Budworth\, Cheshire\, CW6 9BW
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying Race – Oulton Park
+DTSTART;TZID=Europe/London:20260606T150500
+DTEND;TZID=Europe/London:20260606T153000
+DTSTAMP:20260518T224921Z
+UID:492bd6595b3d74ea7e77cf1784b86b1c@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 10\, 11 & 12\nOulton Park\n\nQualifying R
+ ace\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouT
+ ube\n\nSource: btcc.net
+LOCATION:Oulton Park Circuit\, Little Budworth\, Cheshire\, CW6 9BW
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 1 – Oulton Park
+DTSTART;TZID=Europe/London:20260607T122500
+DTEND;TZID=Europe/London:20260607T130000
+DTSTAMP:20260518T224921Z
+UID:7bed09bfea17db5dee0e8be2adaa739e@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 10\, 11 & 12\nOulton Park\n\nRace 1\n\nSu
+ nday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSo
+ urce: btcc.net
+LOCATION:Oulton Park Circuit\, Little Budworth\, Cheshire\, CW6 9BW
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 2 – Oulton Park
+DTSTART;TZID=Europe/London:20260607T145500
+DTEND;TZID=Europe/London:20260607T153000
+DTSTAMP:20260518T224921Z
+UID:65afbe20fc84b1131e543732d3468f95@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 10\, 11 & 12\nOulton Park\n\nRace 2\n\nSu
+ nday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSo
+ urce: btcc.net
+LOCATION:Oulton Park Circuit\, Little Budworth\, Cheshire\, CW6 9BW
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 3 – Oulton Park
+DTSTART;TZID=Europe/London:20260607T172000
+DTEND;TZID=Europe/London:20260607T175500
+DTSTAMP:20260518T224921Z
+UID:862091f740c103ef778382b449cd4ba7@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 10\, 11 & 12\nOulton Park\n\nRace 3\n\nSu
+ nday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSo
+ urce: btcc.net
+LOCATION:Oulton Park Circuit\, Little Budworth\, Cheshire\, CW6 9BW
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Free Practice – Thruxton
+DTSTART;TZID=Europe/London:20260725T102500
+DTEND;TZID=Europe/London:20260725T110500
+DTSTAMP:20260518T224921Z
+UID:6eb450fd8ef3f899660c5ff9a71fa298@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 13\, 14 & 15\nThruxton\n\nFree Practice\n
+ \nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n
+ \nSource: btcc.net
+LOCATION:Thruxton Circuit\, Andover\, Hampshire\, SP11 8PN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying – Thruxton
+DTSTART;TZID=Europe/London:20260725T140000
+DTEND;TZID=Europe/London:20260725T143500
+DTSTAMP:20260518T224921Z
+UID:3ee0718736430fada2055a5b65a4e693@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 13\, 14 & 15\nThruxton\n\nQualifying\n\nS
+ unday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nS
+ ource: btcc.net
+LOCATION:Thruxton Circuit\, Andover\, Hampshire\, SP11 8PN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying Race – Thruxton
+DTSTART;TZID=Europe/London:20260725T150500
+DTEND;TZID=Europe/London:20260725T153000
+DTSTAMP:20260518T224921Z
+UID:2549baf833e7e431230a7f81ae29693c@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 13\, 14 & 15\nThruxton\n\nQualifying Race
+ \n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube
+ \n\nSource: btcc.net
+LOCATION:Thruxton Circuit\, Andover\, Hampshire\, SP11 8PN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 1 – Thruxton
+DTSTART;TZID=Europe/London:20260726T114500
+DTEND;TZID=Europe/London:20260726T122000
+DTSTAMP:20260518T224921Z
+UID:ed4344104d4ac103318db8c5413d4175@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 13\, 14 & 15\nThruxton\n\nRace 1\n\nSunda
+ y races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSourc
+ e: btcc.net
+LOCATION:Thruxton Circuit\, Andover\, Hampshire\, SP11 8PN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 2 – Thruxton
+DTSTART;TZID=Europe/London:20260726T144000
+DTEND;TZID=Europe/London:20260726T151500
+DTSTAMP:20260518T224921Z
+UID:2e1e65ca1bacf9366ec2527434df93a4@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 13\, 14 & 15\nThruxton\n\nRace 2\n\nSunda
+ y races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSourc
+ e: btcc.net
+LOCATION:Thruxton Circuit\, Andover\, Hampshire\, SP11 8PN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 3 – Thruxton
+DTSTART;TZID=Europe/London:20260726T173000
+DTEND;TZID=Europe/London:20260726T180500
+DTSTAMP:20260518T224921Z
+UID:d5bc9082eef86eec6369709a9f9af21e@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 13\, 14 & 15\nThruxton\n\nRace 3\n\nSunda
+ y races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSourc
+ e: btcc.net
+LOCATION:Thruxton Circuit\, Andover\, Hampshire\, SP11 8PN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Free Practice – Knockhill
+DTSTART;TZID=Europe/London:20260808T103000
+DTEND;TZID=Europe/London:20260808T111000
+DTSTAMP:20260518T224921Z
+UID:6b86009cc55d2dc33b3fe023acdc3cb8@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 16\, 17 & 18\nKnockhill\n\nFree Practice\
+ n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\
+ n\nSource: btcc.net
+LOCATION:Knockhill Racing Circuit\, Dunfermline\, Fife\, KY12 9TF
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying – Knockhill
+DTSTART;TZID=Europe/London:20260808T140000
+DTEND;TZID=Europe/London:20260808T143500
+DTSTAMP:20260518T224921Z
+UID:194e06882ef6fdf789441293b8ef7205@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 16\, 17 & 18\nKnockhill\n\nQualifying\n\n
+ Sunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\n
+ Source: btcc.net
+LOCATION:Knockhill Racing Circuit\, Dunfermline\, Fife\, KY12 9TF
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying Race – Knockhill
+DTSTART;TZID=Europe/London:20260808T150500
+DTEND;TZID=Europe/London:20260808T153000
+DTSTAMP:20260518T224921Z
+UID:9ffaf03087032a8a534c656c3566ef45@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 16\, 17 & 18\nKnockhill\n\nQualifying Rac
+ e\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTub
+ e\n\nSource: btcc.net
+LOCATION:Knockhill Racing Circuit\, Dunfermline\, Fife\, KY12 9TF
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 1 – Knockhill
+DTSTART;TZID=Europe/London:20260809T111500
+DTEND;TZID=Europe/London:20260809T115000
+DTSTAMP:20260518T224921Z
+UID:348fe5a90e11ecc4027eb8b92810325a@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 16\, 17 & 18\nKnockhill\n\nRace 1\n\nSund
+ ay races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSour
+ ce: btcc.net
+LOCATION:Knockhill Racing Circuit\, Dunfermline\, Fife\, KY12 9TF
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 2 – Knockhill
+DTSTART;TZID=Europe/London:20260809T141500
+DTEND;TZID=Europe/London:20260809T145000
+DTSTAMP:20260518T224921Z
+UID:15868b4f535f2087167b5cdedd9de332@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 16\, 17 & 18\nKnockhill\n\nRace 2\n\nSund
+ ay races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSour
+ ce: btcc.net
+LOCATION:Knockhill Racing Circuit\, Dunfermline\, Fife\, KY12 9TF
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 3 – Knockhill
+DTSTART;TZID=Europe/London:20260809T172000
+DTEND;TZID=Europe/London:20260809T175500
+DTSTAMP:20260518T224921Z
+UID:f19f8b7e0ed3476455bb6e5e41685adc@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 16\, 17 & 18\nKnockhill\n\nRace 3\n\nSund
+ ay races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSour
+ ce: btcc.net
+LOCATION:Knockhill Racing Circuit\, Dunfermline\, Fife\, KY12 9TF
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Free Practice – Donington Park GP
+DTSTART;TZID=Europe/London:20260822T104500
+DTEND;TZID=Europe/London:20260822T112500
+DTSTAMP:20260518T224921Z
+UID:97df7437b99c4009252280902511a3e9@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 19\, 20 & 21\nDonington Park GP\n\nFree P
+ ractice\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport 
+ YouTube\n\nSource: btcc.net
+LOCATION:Donington Park Circuit\, Castle Donington\, Leicestershire\, DE74
+  2RP
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying – Donington Park GP
+DTSTART;TZID=Europe/London:20260822T140000
+DTEND;TZID=Europe/London:20260822T143500
+DTSTAMP:20260518T224921Z
+UID:6e948b6cd0da35dc6e214acfd3238bc0@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 19\, 20 & 21\nDonington Park GP\n\nQualif
+ ying\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport You
+ Tube\n\nSource: btcc.net
+LOCATION:Donington Park Circuit\, Castle Donington\, Leicestershire\, DE74
+  2RP
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying Race – Donington Park GP
+DTSTART;TZID=Europe/London:20260822T150500
+DTEND;TZID=Europe/London:20260822T153000
+DTSTAMP:20260518T224921Z
+UID:fc7d12328e70b4a30020598a2857f4f6@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 19\, 20 & 21\nDonington Park GP\n\nQualif
+ ying Race\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Spor
+ t YouTube\n\nSource: btcc.net
+LOCATION:Donington Park Circuit\, Castle Donington\, Leicestershire\, DE74
+  2RP
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 1 – Donington Park GP
+DTSTART;TZID=Europe/London:20260823T114500
+DTEND;TZID=Europe/London:20260823T122000
+DTSTAMP:20260518T224921Z
+UID:572df9c6695ef53d659a1bec2b844a09@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 19\, 20 & 21\nDonington Park GP\n\nRace 1
+ \n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube
+ \n\nSource: btcc.net
+LOCATION:Donington Park Circuit\, Castle Donington\, Leicestershire\, DE74
+  2RP
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 2 – Donington Park GP
+DTSTART;TZID=Europe/London:20260823T144500
+DTEND;TZID=Europe/London:20260823T152000
+DTSTAMP:20260518T224921Z
+UID:019b0ea69d905b9a4d307cc77dfa9cb8@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 19\, 20 & 21\nDonington Park GP\n\nRace 2
+ \n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube
+ \n\nSource: btcc.net
+LOCATION:Donington Park Circuit\, Castle Donington\, Leicestershire\, DE74
+  2RP
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 3 – Donington Park GP
+DTSTART;TZID=Europe/London:20260823T173000
+DTEND;TZID=Europe/London:20260823T180500
+DTSTAMP:20260518T224921Z
+UID:0eccbb2a74288d66aa7f038056384b67@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 19\, 20 & 21\nDonington Park GP\n\nRace 3
+ \n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube
+ \n\nSource: btcc.net
+LOCATION:Donington Park Circuit\, Castle Donington\, Leicestershire\, DE74
+  2RP
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Free Practice – Croft
+DTSTART;TZID=Europe/London:20260905T101500
+DTEND;TZID=Europe/London:20260905T105500
+DTSTAMP:20260518T224921Z
+UID:f85c7319e892265a42c96d1e9fd0db84@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 22\, 23 & 24\nCroft\n\nFree Practice\n\nS
+ unday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nS
+ ource: btcc.net
+LOCATION:Croft Circuit\, Darlington\, County Durham\, DL2 2PL
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying – Croft
+DTSTART;TZID=Europe/London:20260905T140000
+DTEND;TZID=Europe/London:20260905T143500
+DTSTAMP:20260518T224921Z
+UID:e3b9d7e4505d4624a5fa33a1c525cd22@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 22\, 23 & 24\nCroft\n\nQualifying\n\nSund
+ ay races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSour
+ ce: btcc.net
+LOCATION:Croft Circuit\, Darlington\, County Durham\, DL2 2PL
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying Race – Croft
+DTSTART;TZID=Europe/London:20260905T150500
+DTEND;TZID=Europe/London:20260905T153000
+DTSTAMP:20260518T224921Z
+UID:ac01fe20414d6293ece060508d385c64@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 22\, 23 & 24\nCroft\n\nQualifying Race\n\
+ nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\
+ nSource: btcc.net
+LOCATION:Croft Circuit\, Darlington\, County Durham\, DL2 2PL
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 1 – Croft
+DTSTART;TZID=Europe/London:20260906T121000
+DTEND;TZID=Europe/London:20260906T124500
+DTSTAMP:20260518T224921Z
+UID:147ce1b089dced32e9c3232365efc935@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 22\, 23 & 24\nCroft\n\nRace 1\n\nSunday r
+ aces live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSource: 
+ btcc.net
+LOCATION:Croft Circuit\, Darlington\, County Durham\, DL2 2PL
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 2 – Croft
+DTSTART;TZID=Europe/London:20260906T143000
+DTEND;TZID=Europe/London:20260906T150500
+DTSTAMP:20260518T224921Z
+UID:2a72cf7340806b6c629eaf02cf7e5d42@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 22\, 23 & 24\nCroft\n\nRace 2\n\nSunday r
+ aces live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSource: 
+ btcc.net
+LOCATION:Croft Circuit\, Darlington\, County Durham\, DL2 2PL
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 3 – Croft
+DTSTART;TZID=Europe/London:20260906T171500
+DTEND;TZID=Europe/London:20260906T175000
+DTSTAMP:20260518T224921Z
+UID:2bb107733c5539c6500fa765728a16da@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 22\, 23 & 24\nCroft\n\nRace 3\n\nSunday r
+ aces live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSource: 
+ btcc.net
+LOCATION:Croft Circuit\, Darlington\, County Durham\, DL2 2PL
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Free Practice – Silverstone
+DTSTART;TZID=Europe/London:20260926T101500
+DTEND;TZID=Europe/London:20260926T105500
+DTSTAMP:20260518T224921Z
+UID:30e5f7173d91ed7b36d1026c8036f8de@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 25\, 26 & 27\nSilverstone\n\nFree Practic
+ e\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTub
+ e\n\nSource: btcc.net
+LOCATION:Silverstone Circuit\, Towcester\, Northamptonshire\, NN12 8TN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying – Silverstone
+DTSTART;TZID=Europe/London:20260926T140000
+DTEND;TZID=Europe/London:20260926T143500
+DTSTAMP:20260518T224921Z
+UID:8946b8285e51be5270304b6051b112a8@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 25\, 26 & 27\nSilverstone\n\nQualifying\n
+ \nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n
+ \nSource: btcc.net
+LOCATION:Silverstone Circuit\, Towcester\, Northamptonshire\, NN12 8TN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying Race – Silverstone
+DTSTART;TZID=Europe/London:20260926T150500
+DTEND;TZID=Europe/London:20260926T153000
+DTSTAMP:20260518T224921Z
+UID:57550d3340f134ad8b0396f3e02751fc@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 25\, 26 & 27\nSilverstone\n\nQualifying R
+ ace\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouT
+ ube\n\nSource: btcc.net
+LOCATION:Silverstone Circuit\, Towcester\, Northamptonshire\, NN12 8TN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 1 – Silverstone
+DTSTART;TZID=Europe/London:20260927T111500
+DTEND;TZID=Europe/London:20260927T115000
+DTSTAMP:20260518T224921Z
+UID:e4daf378304bde94b99db3553af46817@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 25\, 26 & 27\nSilverstone\n\nRace 1\n\nSu
+ nday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSo
+ urce: btcc.net
+LOCATION:Silverstone Circuit\, Towcester\, Northamptonshire\, NN12 8TN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 2 – Silverstone
+DTSTART;TZID=Europe/London:20260927T143000
+DTEND;TZID=Europe/London:20260927T150500
+DTSTAMP:20260518T224921Z
+UID:1d56db9fb6f652e9fe2773f95d5752be@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 25\, 26 & 27\nSilverstone\n\nRace 2\n\nSu
+ nday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSo
+ urce: btcc.net
+LOCATION:Silverstone Circuit\, Towcester\, Northamptonshire\, NN12 8TN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 3 – Silverstone
+DTSTART;TZID=Europe/London:20260927T172000
+DTEND;TZID=Europe/London:20260927T175500
+DTSTAMP:20260518T224921Z
+UID:013a2a93a503b9496803ed8e2f7707d9@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 25\, 26 & 27\nSilverstone\n\nRace 3\n\nSu
+ nday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n\nSo
+ urce: btcc.net
+LOCATION:Silverstone Circuit\, Towcester\, Northamptonshire\, NN12 8TN
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Free Practice – Brands Hatch GP
+DTSTART;TZID=Europe/London:20261010T101000
+DTEND;TZID=Europe/London:20261010T105000
+DTSTAMP:20260518T224921Z
+UID:cb7b06eaaa80b8d3b0a439bded41ae90@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 28\, 29 & 30\nBrands Hatch GP\n\nFree Pra
+ ctice\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport Yo
+ uTube\n\nSource: btcc.net
+LOCATION:Brands Hatch Circuit\, Fawkham\, Longfield\, Kent\, DA3 8NG
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying – Brands Hatch GP
+DTSTART;TZID=Europe/London:20261010T134500
+DTEND;TZID=Europe/London:20261010T142000
+DTSTAMP:20260518T224921Z
+UID:03e64daf2b93f0688065240d74e97168@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 28\, 29 & 30\nBrands Hatch GP\n\nQualifyi
+ ng\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTu
+ be\n\nSource: btcc.net
+LOCATION:Brands Hatch Circuit\, Fawkham\, Longfield\, Kent\, DA3 8NG
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Qualifying Race – Brands Hatch GP
+DTSTART;TZID=Europe/London:20261010T145000
+DTEND;TZID=Europe/London:20261010T151500
+DTSTAMP:20260518T224921Z
+UID:8f38a825b6c53fa2102b90bf68c1a5c8@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 28\, 29 & 30\nBrands Hatch GP\n\nQualifyi
+ ng Race\n\nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport 
+ YouTube\n\nSource: btcc.net
+LOCATION:Brands Hatch Circuit\, Fawkham\, Longfield\, Kent\, DA3 8NG
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 1 – Brands Hatch GP
+DTSTART;TZID=Europe/London:20261011T112500
+DTEND;TZID=Europe/London:20261011T120000
+DTSTAMP:20260518T224921Z
+UID:445c06601c4c2e00826ee8a7dbf4276d@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 28\, 29 & 30\nBrands Hatch GP\n\nRace 1\n
+ \nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n
+ \nSource: btcc.net
+LOCATION:Brands Hatch Circuit\, Fawkham\, Longfield\, Kent\, DA3 8NG
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 2 – Brands Hatch GP
+DTSTART;TZID=Europe/London:20261011T143500
+DTEND;TZID=Europe/London:20261011T151000
+DTSTAMP:20260518T224921Z
+UID:5c06a5979d2e5f8f4f3be6e10004953f@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 28\, 29 & 30\nBrands Hatch GP\n\nRace 2\n
+ \nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n
+ \nSource: btcc.net
+LOCATION:Brands Hatch Circuit\, Fawkham\, Longfield\, Kent\, DA3 8NG
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🏁 BTCC Race 3 – Brands Hatch GP
+DTSTART;TZID=Europe/London:20261011T171500
+DTEND;TZID=Europe/London:20261011T175000
+DTSTAMP:20260518T224921Z
+UID:bd660fce87b43ea5dac3e50436f50c3e@btcc-cal
+DESCRIPTION:BTCC 2026 – Rounds 28\, 29 & 30\nBrands Hatch GP\n\nRace 3\n
+ \nSunday races live on ITV4 / ITVX\nQualifying live on ITV Sport YouTube\n
+ \nSource: btcc.net
+LOCATION:Brands Hatch Circuit\, Fawkham\, Longfield\, Kent\, DA3 8NG
+END:VEVENT
+END:VCALENDAR

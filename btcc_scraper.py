@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-BTCC 2026 Season ICS Generator
+BoxBox – BTCC 2026 ICS Generator
 Scrapes btcc.net circuit pages and builds a subscribable iCal feed.
-Run daily via cron / GitHub Actions to keep session times up to date.
+Run daily via GitHub Actions to keep session times up to date.
 """
 
 import re
@@ -24,7 +24,7 @@ VENUES = [
         "saturday": date(2026, 5, 23),
         "sunday": date(2026, 5, 24),
         "rounds": "7, 8 & 9",
-        "location": "Snetterton Circuit, Norwich, Norfolk, NR16 2JU",
+        "location": "Snetterton Circuit, Snetterton, Norwich NR16 2JU",
     },
     {
         "name": "Oulton Park",
@@ -32,7 +32,7 @@ VENUES = [
         "saturday": date(2026, 6, 6),
         "sunday": date(2026, 6, 7),
         "rounds": "10, 11 & 12",
-        "location": "Oulton Park Circuit, Little Budworth, Cheshire, CW6 9BW",
+        "location": "Oulton Park Circuit, Little Budworth, Tarporley CW6 9BW",
     },
     {
         "name": "Thruxton",
@@ -40,7 +40,7 @@ VENUES = [
         "saturday": date(2026, 7, 25),
         "sunday": date(2026, 7, 26),
         "rounds": "13, 14 & 15",
-        "location": "Thruxton Circuit, Andover, Hampshire, SP11 8PN",
+        "location": "Thruxton Circuit, Thruxton, Andover SP11 8PN",
     },
     {
         "name": "Knockhill",
@@ -48,15 +48,15 @@ VENUES = [
         "saturday": date(2026, 8, 8),
         "sunday": date(2026, 8, 9),
         "rounds": "16, 17 & 18",
-        "location": "Knockhill Racing Circuit, Dunfermline, Fife, KY12 9TF",
+        "location": "Knockhill Racing Circuit, Knockhill, Dunfermline KY12 9TF",
     },
     {
-        "name": "Donington Park GP",
+        "name": "Donington Park",
         "slug": "donington-park-gp",
         "saturday": date(2026, 8, 22),
         "sunday": date(2026, 8, 23),
         "rounds": "19, 20 & 21",
-        "location": "Donington Park Circuit, Castle Donington, Leicestershire, DE74 2RP",
+        "location": "Donington Park Circuit, Castle Donington, Derby DE74 2RP",
     },
     {
         "name": "Croft",
@@ -64,7 +64,7 @@ VENUES = [
         "saturday": date(2026, 9, 5),
         "sunday": date(2026, 9, 6),
         "rounds": "22, 23 & 24",
-        "location": "Croft Circuit, Darlington, County Durham, DL2 2PL",
+        "location": "Croft Circuit, Dalton-on-Tees, Darlington DL2 2PL",
     },
     {
         "name": "Silverstone",
@@ -72,25 +72,24 @@ VENUES = [
         "saturday": date(2026, 9, 26),
         "sunday": date(2026, 9, 27),
         "rounds": "25, 26 & 27",
-        "location": "Silverstone Circuit, Towcester, Northamptonshire, NN12 8TN",
+        "location": "Silverstone Circuit, Silverstone, Towcester NN12 8TN",
     },
     {
-        "name": "Brands Hatch GP",
+        "name": "Brands Hatch",
         "slug": "brands-hatch-gp",
         "saturday": date(2026, 10, 10),
         "sunday": date(2026, 10, 11),
         "rounds": "28, 29 & 30",
-        "location": "Brands Hatch Circuit, Fawkham, Longfield, Kent, DA3 8NG",
+        "location": "Brands Hatch, Fawkham, Longfield DA3 8NG",
     },
 ]
 
 BTCC_KEYWORDS = [
     "kwik fit british touring car",
     "british touring car championship",
-    "qualifying race",  # BTCC qualifying race rows may just say this
+    "qualifying race",
 ]
 
-# Default durations (minutes) when no end time is listed
 SESSION_DURATIONS = {
     "free practice": 40,
     "qualifying": 35,
@@ -100,45 +99,33 @@ SESSION_DURATIONS = {
 
 
 def is_btcc_row(cells):
-    """Return True if any cell references the BTCC."""
     text = " ".join(c.get_text(strip=True).lower() for c in cells)
     return any(kw in text for kw in BTCC_KEYWORDS)
 
 
 def is_logistical_row(row):
-    """Skip non-session rows: lunch breaks, pit lane opens, autograph sessions, etc."""
     text = row.get_text(strip=True).lower()
     skip_phrases = [
         "lunch break", "pit lane opens", "pit lane walkabout",
         "autograph session", "to grid", "tbc",
     ]
-    # Rows with italic/em content are typically logistical
     if row.find(["em", "i"]):
         return True
     return any(p in text for p in skip_phrases)
 
 
 def parse_time_range(raw, event_date):
-    """
-    Parse strings like '10:30 – 11:10', '09.15 – 09.50', '15:05'
-    Returns (start_dt, end_dt). end_dt may be None.
-    """
-    # Normalise separators: dots to colons, various dashes to ASCII hyphen
-    cleaned = raw.strip().replace(".", ":").replace("–", "-").replace("—", "-")
-    # Strip anything that isn't digits, colons, hyphens, or spaces
+    cleaned = raw.strip().replace(".", ":").replace("\u2013", "-").replace("\u2014", "-")
     cleaned = re.sub(r"[^\d:\-\s]", "", cleaned).strip()
-
     parts = [p.strip() for p in cleaned.split("-") if p.strip()]
 
     def to_dt(t):
-        t = t.strip()
-        m = re.match(r"^(\d{1,2}):(\d{2})$", t)
+        m = re.match(r"^(\d{1,2}):(\d{2})$", t.strip())
         if not m:
             return None
         h, mi = int(m.group(1)), int(m.group(2))
         try:
-            naive = datetime(event_date.year, event_date.month, event_date.day, h, mi)
-            return LONDON.localize(naive)
+            return LONDON.localize(datetime(event_date.year, event_date.month, event_date.day, h, mi))
         except ValueError:
             return None
 
@@ -148,7 +135,6 @@ def parse_time_range(raw, event_date):
 
 
 def classify_session(activity_text):
-    """Map raw activity text to a clean session label."""
     a = activity_text.lower().strip()
     if "qualifying race" in a:
         return "qualifying race"
@@ -156,23 +142,19 @@ def classify_session(activity_text):
         return "qualifying"
     if "free practice" in a or "practice" in a:
         return "free practice"
-    # Sunday BTCC rows have the full championship name as the activity
-    if "british touring car" in a or "kwik fit" in a:
-        return "race"
-    if "race" in a:
+    if "british touring car" in a or "kwik fit" in a or "race" in a:
         return "race"
     return "other"
 
 
 def scrape_venue(venue):
-    """Fetch a circuit page and return a list of BTCC session dicts."""
     url = f"https://btcc.net/circuit/{venue['slug']}/"
-    print(f"  → {url}")
+    print(f"  -> {url}")
 
     try:
         resp = requests.get(
             url, timeout=15,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; BTCC-Cal/1.0)"},
+            headers={"User-Agent": "Mozilla/5.0 (compatible; BoxBox-Cal/1.0)"},
         )
         resp.raise_for_status()
     except Exception as exc:
@@ -184,7 +166,6 @@ def scrape_venue(venue):
     current_date = None
     race_count = 0
 
-    # Walk top-level content elements in document order
     for el in soup.find_all(["h2", "h3", "h4", "table"]):
         if el.name in ("h2", "h3", "h4"):
             heading = el.get_text(strip=True).lower()
@@ -196,14 +177,11 @@ def scrape_venue(venue):
                 race_count = 0
             continue
 
-        # It's a <table>
         if current_date is None:
             continue
 
         for row in el.find_all("tr"):
             cells = row.find_all(["td", "th"])
-
-            # Skip header rows and short rows
             if len(cells) < 2:
                 continue
             if all(c.name == "th" for c in cells):
@@ -215,15 +193,9 @@ def scrape_venue(venue):
 
             time_raw = cells[0].get_text(strip=True)
             activity_raw = cells[1].get_text(strip=True)
-
             session_type = classify_session(activity_raw)
 
-            # Saturday 4-col rows: Time | Activity | Championship | Laps
-            # The Activity column has the session type ("Free Practice", "Qualifying Race", etc.)
-            # Sunday 3-col rows: Time | Championship name | Laps
-            # The Activity column is the championship name → classify as race
             if len(cells) >= 4:
-                # Double-check: championship column (index 2) should confirm BTCC
                 champ = cells[2].get_text(strip=True).lower()
                 if not any(kw in champ for kw in BTCC_KEYWORDS):
                     continue
@@ -238,7 +210,7 @@ def scrape_venue(venue):
             elif session_type == "qualifying":
                 display_label = "Qualifying"
             else:
-                continue  # skip unknowns
+                continue
 
             start_dt, end_dt = parse_time_range(time_raw, current_date)
             if not start_dt:
@@ -246,11 +218,11 @@ def scrape_venue(venue):
                 continue
 
             if not end_dt:
-                mins = SESSION_DURATIONS.get(session_type, 35)
-                end_dt = start_dt + timedelta(minutes=mins)
+                end_dt = start_dt + timedelta(minutes=SESSION_DURATIONS.get(session_type, 35))
 
             sessions.append({
                 "venue": venue["name"],
+                "slug": venue["slug"],
                 "rounds": venue["rounds"],
                 "location": venue["location"],
                 "label": display_label,
@@ -263,30 +235,37 @@ def scrape_venue(venue):
 
 def build_calendar(all_sessions):
     cal = Calendar()
-    cal.add("prodid", "-//BTCC 2026 Calendar//btcc-cal//EN")
+    cal.add("prodid", "-//BoxBox BTCC 2026//btcc-cal//EN")
     cal.add("version", "2.0")
     cal.add("calscale", "GREGORIAN")
     cal.add("method", "PUBLISH")
-    cal.add("x-wr-calname", "BTCC 2026")
+    cal.add("x-wr-calname", "BoxBox - BTCC 2026")
     cal.add("x-wr-timezone", "Europe/London")
-    cal.add("x-wr-caldesc", "BTCC 2026 session times – all rounds. Auto-generated from btcc.net")
+    cal.add("x-wr-caldesc", "BTCC 2026 session times. Auto-generated from btcc.net")
     cal.add("refresh-interval;value=duration", "P1D")
     cal.add("x-published-ttl", "P1D")
 
     for s in all_sessions:
         event = Event()
-        event.add("summary", f"🏁 BTCC {s['label']} – {s['venue']}")
+
+        # RushSync-style title: [BTCC] Venue Session 🏁
+        event.add("summary", f"[BTCC] {s['venue']} {s['label']} \U0001f3c1")
+
         event.add("dtstart", s["start"])
         event.add("dtend", s["end"])
         event.add("location", s["location"])
+
+        circuit_url = f"https://btcc.net/circuit/{s['slug']}/"
+        event.add("url", circuit_url)
+
         event.add("description", (
-            f"BTCC 2026 – Rounds {s['rounds']}\n"
-            f"{s['venue']}\n\n"
-            f"{s['label']}\n\n"
-            f"Sunday races live on ITV4 / ITVX\n"
-            f"Qualifying live on ITV Sport YouTube\n\n"
-            f"Source: btcc.net"
+            f"BTCC 2026 - Rounds {s['rounds']}\n"
+            f"{s['venue']} | {s['label']}\n\n"
+            f"Sunday races: ITV4 / ITVX\n"
+            f"Qualifying: ITV Sport YouTube\n\n"
+            f"{circuit_url}"
         ))
+
         uid_src = f"btcc-2026-{s['venue']}-{s['label']}-{s['start'].isoformat()}"
         event.add("uid", hashlib.md5(uid_src.encode()).hexdigest() + "@btcc-cal")
         event.add("dtstamp", datetime.now(pytz.utc))
@@ -296,7 +275,7 @@ def build_calendar(all_sessions):
 
 
 if __name__ == "__main__":
-    print("BTCC 2026 ICS Generator")
+    print("BoxBox - BTCC 2026 ICS Generator")
     print("=" * 50)
 
     all_sessions = []
@@ -307,7 +286,7 @@ if __name__ == "__main__":
         if sessions:
             for s in sessions:
                 day = "Sat" if s["start"].date() == venue["saturday"] else "Sun"
-                print(f"    {day} {s['start'].strftime('%H:%M')}–{s['end'].strftime('%H:%M')}  {s['label']}")
+                print(f"    {day} {s['start'].strftime('%H:%M')}-{s['end'].strftime('%H:%M')}  {s['label']}")
         else:
             print("    (no sessions found)")
         all_sessions.extend(sessions)

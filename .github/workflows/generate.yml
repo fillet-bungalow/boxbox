@@ -28,12 +28,12 @@ jobs:
       - name: Run scraper
         run: python generate.py
 
-      - name: Commit & push if changed
+      - name: name: Commit & push if changed
         run: |
-          git config user.name "btcc-cal-bot"
-          git config user.email "btcc-cal-bot@users.noreply.github.com"
+          git config user.name "boxbox-bot"
+          git config user.email "boxbox-bot@users.noreply.github.com"
           git fetch origin main
           git checkout origin/main -- .
-          git add btcc_2026.ics
-          git diff --staged --quiet || git commit -m "chore: refresh BTCC 2026 timetable [$(date -u +%Y-%m-%d)]"
+          git add boxbox.ics
+          git diff --staged --quiet || git commit -m "chore: refresh BoxBox calendar [$(date -u +%Y-%m-%d)]"
           git push

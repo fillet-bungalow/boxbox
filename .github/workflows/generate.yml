@@ -28,7 +28,7 @@ jobs:
       - name: Run scraper
         run: python generate.py
 
-      - name: name: Commit & push if changed
+      - name: Commit & push if changed
         run: |
           git config user.name "boxbox-bot"
           git config user.email "boxbox-bot@users.noreply.github.com"

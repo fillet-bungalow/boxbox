@@ -26,7 +26,7 @@ jobs:
         run: pip install requests beautifulsoup4 icalendar pytz
 
       - name: Run scraper
-        run: python btcc_scraper.py
+        run: python generate.py
 
       - name: Commit & push if changed
         run: |

@@ -16,11 +16,14 @@ from icalendar import Calendar, Event
 import pytz
 
 # ── Import series scrapers ──────────────────────────────────────────────────
-from scrapers import btcc, f1
+from scrapers import btcc, f1, motogp, moto2, moto3
 
 SCRAPERS = [
     btcc,
     f1,
+    motogp,
+    moto2,
+    moto3,
 ]
 # ───────────────────────────────────────────────────────────────────────────
 

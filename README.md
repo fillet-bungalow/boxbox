@@ -20,6 +20,9 @@ https://raw.githubusercontent.com/fillet-bungalow/boxbox/main/boxbox.ics
 |--------|--------|
 | `[BTCC]` | Kwik Fit British Touring Car Championship |
 | `[F1]` | Formula 1 World Championship |
+| `[MotoGP]` | MotoGP World Championship (qualifying, sprint & race) |
+| `[Moto2]` | Moto2 World Championship (race only) |
+| `[Moto3]` | Moto3 World Championship (race only) |
 
 ## Event format
 
@@ -52,7 +55,11 @@ boxbox/
 ├── scrapers/
 │   ├── __init__.py
 │   ├── btcc.py              ← scrapes btcc.net
-│   └── f1.py               ← fetches Jolpica API
+│   ├── f1.py               ← fetches Jolpica API
+│   ├── motogp_base.py      ← shared MotoGP PulseLive API logic
+│   ├── motogp.py           ← MotoGP class (qualifying, sprint, race)
+│   ├── moto2.py            ← Moto2 class (race only)
+│   └── moto3.py            ← Moto3 class (race only)
 └── .github/workflows/
     └── generate.yml         ← runs daily at 06:00 UTC
 ```
